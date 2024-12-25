@@ -1,0 +1,418 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #023467;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+marquee span{
+    color: #f39c12;
+}
+
+.navbar .logo h1 {
+    color: #f39c12;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+/* Auth Buttons */
+.auth-buttons .btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+
+
+.hero{
+    background-color: black;
+}
+
+.hero {
+    margin: 0;
+    height: 700px;
+    background: url("bgnew1.png") no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    transition: transform 0.3s;
+}
+
+.hero:hover {
+    transform: scale(1.03);
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #f39c12;
+    position: relative;
+    bottom: 100px !important;
+}
+
+.hero-content p{
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.hero-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #e67e22;
+}
+
+.hero-content h2{
+    position: relative;
+    bottom: 50px;
+}
+
+.hero-content p{
+    position: relative;
+    top: 200px;
+}
+
+
+
+.hero-content a{
+    position: relative;
+    top: 200px;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #34495e;
+    text-align: center;
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services .section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-image {
+    background-color: #95a5a6;
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+/* Featured Flights Section */
+.featured-flights {
+    padding: 50px 20px;
+    background-color: #34495e;
+}
+
+.featured-flights div h2{
+    text-align: center;
+}
+
+.featured-flights .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-flights .section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.flight-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flight-item {
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flight-item:hover {
+    transform: scale(1.05);
+}
+
+.flight-image {
+    height: 300px;
+    background-color: #95a5a6;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.flight-info {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+.flight-info h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.flight-info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.flight-info .btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.flight-info .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Footer Section */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f39c12;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .service-item, .flight-item {
+        width: 45%;
+    }
+
+    .hero-content h2 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-item, .flight-item {
+        width: 100%;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+#london{
+    position: relative;
+    left: 200px;
+}
+
+#dubai{
+    position: relative;
+    right: 200px;
+}
+
+footer {
+    background-color: #023467; /* Slightly darker than the header */
+    color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-links {
+    margin-bottom: 20px;
+}
+
+footer .footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+footer .footer-links a:hover {
+    color: #f39c12;
+}
+
+footer .footer-contact {
+    margin-bottom: 20px;
+}
+
+footer .footer-contact p {
+    margin: 5px 0;
+}
+
+footer .footer-contact a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+footer .footer-contact a:hover {
+    color: #f39c12;
+}
+
+footer .social-media a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+footer .social-media a:hover {
+    color: #f39c12;
+}
+
+footer .social-media i {
+    margin-right: 8px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #023467;
+    text-align: center;
+    padding: 20px;
+    color: #ecf0f1;
+}
+
+footer p {
+    margin: 0;
+}

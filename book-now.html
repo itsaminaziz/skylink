@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="book-now.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="nav">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SKY LINK</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="book-now">
+        <div class="container">
+            <h2 class="section-title">Book Your Flight</h2>
+            <form class="book-form" action="#" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="">--Select Destination--</option>
+                    <option value="new-york">New York</option>
+                    <option value="paris">Paris</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="london">London</option>
+                    <option value="dubai">Dubai</option>
+                </select>
+
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="passengers">Number of Passengers</label>
+                <input type="number" id="passengers" name="passengers" min="1" max="10" placeholder="Enter the number of passengers" required>
+
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SKY LINK. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

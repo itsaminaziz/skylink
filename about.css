@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50;
+    color: white;
+}
+
+header {
+    background-color: #34495e;
+    padding: 0 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo h1 {
+    color: #f39c12;
+    margin: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.auth-buttons a {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.auth-buttons a:hover {
+    background-color: #e67e22;
+}
+
+.about-section {
+    padding: 60px 0;
+    background-color: #34495e;
+}
+
+.about-section .container {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ecf0f1;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #7f8c8d;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    transition: 0.3s;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.card ul li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
+}
+footer {
+    background-color: #023467;
+    text-align: center;
+    padding: 20px;
+    color: #ecf0f1;
+}
+footer p {
+    margin: 0;
+}
